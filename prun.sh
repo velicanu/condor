@@ -13,5 +13,6 @@ arglist=`echo $@`
 cat prun.condor | sed "s@log_flag@$now@g" | sed "s@arg_list@${arglist}@g" | sed "s@user_flag@$USER@g" | sed "s@dir_flag@$PWD/$now@g" | sed "s@njobs@${njobs}@g" | sed "s@exe_flag@$4@g" | sed "s@tar_flag@$3@g" > $now/pmerge.condor
 
 cat $now/pmerge.condor
-condor_submit $now/pmerge.condor
+echo
+echo condor_submit $now/pmerge.condor
 
