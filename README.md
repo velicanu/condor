@@ -1,5 +1,5 @@
 # condor sumbission tools
-These scripts facilitate running any executable in condor which satisfies certain requirements:
+These scripts facilitate running any executable in condor which has the structure: ./exe <inputfile> <outputfile> [args]
 
 ## Executable requirements:
 The exe must have the first parameter be the inputfile to run on, and the second parameter to be the output filename, followed by any number of parameters you like
